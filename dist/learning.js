@@ -1,3 +1,4 @@
+import {assignPageNumbers} from './notebook-data.js';
 import {extraLessons} from './curriculum.js';
 import {labDefinitions} from './lab-science.js';
 export const lessons = [
@@ -16,13 +17,13 @@ export const organelles = {
  vacuole:{name:'Không bào trung tâm',tag:'DỰ TRỮ & SỨC TRƯƠNG',text:'Chứa dịch tế bào, góp phần dự trữ chất và duy trì áp suất trương, hỗ trợ hình dạng tế bào thực vật.',fact:'Không bào trung tâm thường chiếm một phần lớn thể tích tế bào thực vật trưởng thành.'},
  wall:{name:'Thành tế bào',tag:'NÂNG ĐỠ & BẢO VỆ',text:'Nằm bên ngoài màng sinh chất, có thành phần chính là cellulose. Thành tế bào giúp định hình và nâng đỡ tế bào.',fact:'Đây là mô hình cắt lớp chọn lọc; nhiều cấu trúc nhỏ đã được lược bỏ để dễ quan sát.'}
 };
-export const defaultState = {version:2,grade:10,book:'kntt',name:'Nhà thám hiểm',completed:[],saved:[],notes:[],trials:[],viewed:[],labRuns:[],completedLabs:[]};
+export const defaultState = {version:3,grade:10,book:'kntt',name:'Nhà thám hiểm',completed:[],saved:[],notes:[],trials:[],viewed:[],labRuns:[],completedLabs:[]};
 export function cleanState(raw){
  const v=raw&&typeof raw==='object'?raw:{};const ids=new Set(lessons.map(x=>x.id)),labIds=new Set(labDefinitions.map(x=>x.id));
  const trials=(Array.isArray(v.trials)?v.trials:[]).filter(x=>x&&[x.light,x.co2,x.rate].every(n=>typeof n==='number'&&Number.isFinite(n)&&n>=0&&n<=100)).slice(-20);
  const labRuns=(Array.isArray(v.labRuns)?v.labRuns:[]).filter(x=>x&&typeof x.id==='string'&&labIds.has(x.labId)&&typeof x.conditions==='string'&&typeof x.result==='string').slice(-100).map(x=>({id:x.id,labId:x.labId,conditions:x.conditions.slice(0,500),result:x.result.slice(0,2000),date:typeof x.date==='string'?x.date:''}));
  const completedLabs=[...new Set([...(Array.isArray(v.completedLabs)?v.completedLabs:[]),...labRuns.map(x=>x.labId),...(trials.length?['photosynthesis']:[])])].filter(x=>labIds.has(x));
- return {...defaultState,grade:[10,11,12].includes(v.grade)?v.grade:10,book:v.book==='ctst'?'ctst':'kntt',name:typeof v.name==='string'?v.name.slice(0,40):defaultState.name,completed:[...new Set(Array.isArray(v.completed)?v.completed:[])].filter(x=>ids.has(x)),saved:[...new Set(Array.isArray(v.saved)?v.saved:[])].filter(x=>ids.has(x)),viewed:[...new Set(Array.isArray(v.viewed)?v.viewed:[])].filter(x=>['cell','dna'].includes(x)),notes:(Array.isArray(v.notes)?v.notes:[]).filter(x=>x&&typeof x.id==='string'&&typeof x.title==='string'&&typeof x.body==='string').slice(0,100).map(x=>({id:x.id,title:x.title.slice(0,100),body:x.body.slice(0,6000),date:typeof x.date==='string'?x.date:''})),trials,labRuns,completedLabs};
+ return {...defaultState,grade:[10,11,12].includes(v.grade)?v.grade:10,book:v.book==='ctst'?'ctst':'kntt',name:typeof v.name==='string'?v.name.slice(0,40):defaultState.name,completed:[...new Set(Array.isArray(v.completed)?v.completed:[])].filter(x=>ids.has(x)),saved:[...new Set(Array.isArray(v.saved)?v.saved:[])].filter(x=>ids.has(x)),viewed:[...new Set(Array.isArray(v.viewed)?v.viewed:[])].filter(x=>['cell','dna','chloroplast','mitochondrion','bacterium'].includes(x)),notes:assignPageNumbers((Array.isArray(v.notes)?v.notes:[]).filter(x=>x&&typeof x.id==='string'&&typeof x.title==='string'&&typeof x.body==='string').slice(0,100).map(x=>({id:x.id,title:x.title.slice(0,100),body:x.body.slice(0,6000),date:typeof x.date==='string'?x.date:'',pageNumber:Number.isInteger(x.pageNumber)&&x.pageNumber>0&&x.pageNumber<=100?x.pageNumber:undefined}))),trials,labRuns,completedLabs};
 }
 export function experimentRate(light,co2){return Math.round(Math.min(Math.max(0,light)/70,1)*Math.min(Math.max(0,co2)/65,1)*100)}
 export function xpFor(s){const labs=new Set([...(s.completedLabs||[]),...(s.labRuns||[]).map(x=>x.labId)]);if(s.trials.length)labs.add('photosynthesis');return s.completed.length*30+s.viewed.length*10+labs.size*20}

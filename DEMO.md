@@ -11,7 +11,7 @@
 1. **20 giây — Mở cánh cửa.** Mở trang đầu trên máy tính, sau đó cho thấy cùng trang trên điện thoại. Nêu một vấn đề cụ thể: học sinh khó liên hệ hình phẳng trong sách với cấu trúc và quá trình sống.
 2. **45 giây — Đi vào tế bào.** Mở mô hình, xoay, chọn lục lạp. Hỏi “cây có ti thể không?” rồi chọn ti thể. Mục tiêu: gỡ một hiểu nhầm bằng cấu trúc và chú giải.
 3. **60 giây — Tự kiểm tra giả thuyết.** Vào thí nghiệm quang hợp, để ánh sáng 0 và CO₂ cao, ghi kết quả. Giữ CO₂, tăng ánh sáng, ghi thêm kết quả. Nói rõ đây là mô hình định tính với giả định công khai, không phải số liệu thực nghiệm.
-4. **35 giây — Lưu được việc học.** Lưu kết quả vào sổ tay, vào bài quang hợp, trả lời câu hỏi. Mở hộ chiếu và góc giáo viên để cho thấy dữ liệu đến từ thao tác vừa thực hiện.
+4. **35 giây — Lưu được việc học.** Lưu kết quả vào sổ tay, gõ thêm một câu nhận xét trên trang giấy rồi lật sang trang kế tiếp. Quay lại để thấy nội dung vẫn còn. Mở hộ chiếu và góc giáo viên để cho thấy dữ liệu đến từ thao tác vừa thực hiện.
 5. **20 giây — Mở hướng phát triển.** Đổi sang lớp 12, mở ADN. Kết bằng kế hoạch thử nghiệm và giáo viên thẩm định, không trình bày các tính năng AI/AR/tài khoản như đã có.
 
 ## Trước vòng thi tiếp theo
@@ -24,6 +24,6 @@
 
 ## Phạm vi nên nói rõ với ban giám khảo
 
-Bản này có 15 bài mẫu thuộc ba khối, không phải toàn bộ chương trình. Có 4 trang riêng, 2 mô hình 3D và 6 trạm tương tác. Dữ liệu cục bộ, không có người dùng hoặc kết quả học tập được tạo giả. Chưa triển khai AI, AR, thanh toán hoặc lớp học nhiều tài khoản.
+Bản này có 15 bài mẫu thuộc ba khối, không phải toàn bộ chương trình. Có 4 trang riêng, 5 mô hình 3D, 3 poster tải về và 6 trạm tương tác. Sổ tay cho phép gõ và lưu trực tiếp, lật trang và xuất ghi chép. Dữ liệu cục bộ, không có người dùng hoặc kết quả học tập được tạo giả. Chưa triển khai AI, AR, thanh toán hoặc lớp học nhiều tài khoản.
 
 Giữ bản chạy tại máy qua `npm start` và thử trước trên thiết bị trình diễn. Tất cả ảnh, thư viện và phông chữ hiển thị chính được lưu trong dự án.

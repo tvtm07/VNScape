@@ -43,10 +43,11 @@ npm.cmd test
 - Giao diện triển lãm xanh rừng sâu: không gian nhiều lớp, hạt phấn, ánh sáng viền và thanh chọn tế bào/ADN ngay trên trang đầu.
 - Không gian 3D gần toàn màn hình, đèn quan sát và ẩn/hiện thành tế bào. Nút Chuyển động tạm dừng hiệu ứng; cài đặt giảm chuyển động của hệ điều hành được tôn trọng.
 - Mười lăm bài mẫu, năm bài cho mỗi lớp 10, 11, 12; chọn khối lớp, tìm kiếm có hoặc không dấu, đánh dấu bài. Nội dung mới gồm năng lượng, phân bào, vi sinh vật, cảm ứng, sinh trưởng, sinh sản, tiến hóa, sinh thái và di truyền học người.
-- Mô hình tế bào thực vật cắt lớp và ADN: xoay bằng kéo hoặc bàn phím, phóng to, dừng chuyển động; chọn bào quan bằng chạm hoặc nút chú giải. Có bản chú giải khi WebGL không khả dụng.
+- Năm mô hình 3D: tế bào thực vật cắt lớp, ADN, lục lạp, ti thể và vi khuẩn. Xoay bằng kéo hoặc bàn phím, phóng to, dừng chuyển động; chọn cấu trúc bằng chạm hoặc nút chú giải. Có bản chú giải khi WebGL không khả dụng.
+- Logo SVG riêng, ba poster khoa học có thể mở lớn và tải về, ảnh thiên nhiên kèm nguồn. Thư viện và phòng thí nghiệm có hậu cảnh rừng nhiều lớp, ánh sáng và cây lá gần–xa.
 - Sáu trạm tương tác: quang hợp, thẩm thấu, enzyme theo nhiệt độ/pH, hướng sáng, lai Mendel và dòng năng lượng sinh thái. Có hình minh họa thay đổi theo điều kiện, nhật ký so sánh, lưu vào sổ tay và liên kết bài học.
 - Câu hỏi có phản hồi, hoàn thành bài, XP không cộng lặp, huy hiệu, hành trình, đổi tên người học.
-- Sổ tay tạo/sửa/xóa ghi chép, xuất văn bản; góc giáo viên hiển thị kết quả thực tế trên thiết bị và xuất CSV.
+- Sổ tay dạng quyển sách: gõ tiêu đề/nội dung trực tiếp lên giấy, tự động lưu, lật trang có hiệu ứng, mục lục, bìa sổ, thêm/xóa nội dung trang và xuất văn bản theo thứ tự trang. Máy tính mở hai trang; điện thoại một trang. Ghi chép cũ được giữ lại và đánh số trang. Góc giáo viên hiển thị kết quả thực tế trên thiết bị và xuất CSV.
 - Bố cục điện thoại, menu nhỏ, hộp thoại truy cập bằng bàn phím, hỗ trợ giảm chuyển động. Nội dung chính dùng cỡ chữ khoảng 15–16px, nút và nhãn được tăng kích thước.
 
 ## Giới hạn hiện tại
