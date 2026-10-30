@@ -4,21 +4,42 @@ Bản trải nghiệm dự thi EdTech, giao diện và nội dung tiếng Việt
 
 ## Chạy tại máy
 
-Yêu cầu Node.js 18+. Không cần cài thư viện để chạy web.
+Yêu cầu Node.js 18+. Không cần tạo môi trường Python `venv` hoặc cài thêm thư viện để chạy web.
 
-```sh
-npm start
+Nếu terminal đang ở `C:\Users\Admin\Desktop\VNScape` như thư mục mở trong VS Code, chạy lần lượt:
+
+```powershell
+cd .\vnscape
+npm.cmd start
 ```
 
-Mở http://127.0.0.1:4173. Kiểm tra mã và các quy tắc dữ liệu:
+Phải chạy trong thư mục con `vnscape` có file `package.json`. Việc đang mở `README.md` trong trình soạn thảo không tự chuyển thư mục của terminal. Nếu terminal đã ở `VNScape\vnscape`, chỉ chạy `npm.cmd start`.
 
-```sh
-npm run check
-npm test
+Khi terminal hiện `VNScape: http://127.0.0.1:4173`, mở địa chỉ đó bằng trình duyệt. Giữ terminal chạy khi sử dụng web; nhấn `Ctrl+C` để dừng.
+
+Trên Windows PowerShell, `npm.cmd` tránh lỗi chặn thực thi file `npm.ps1`; không cần đổi Execution Policy. Nếu `npm` của bạn chạy bình thường, có thể dùng `npm start` tương đương. Cũng có thể chạy trực tiếp `node server.mjs` trong cùng thư mục.
+
+Kiểm tra mã và các quy tắc dữ liệu, cũng từ thư mục con `vnscape`:
+
+```powershell
+npm.cmd run check
+npm.cmd test
 ```
+
+### Lỗi thường gặp
+
+- **`ENOENT ... VNScape\package.json`:** terminal đang ở thư mục ngoài. Chạy `cd .\vnscape` trước.
+- **`npm.ps1 cannot be loaded ... running scripts is disabled`:** dùng `npm.cmd` như hướng dẫn trên.
+- **`EADDRINUSE ... 4173`:** đã có chương trình dùng cổng này. Nếu bản VNScape cũ vẫn chạy, mở địa chỉ trên hoặc nhấn `Ctrl+C` ở terminal chạy bản cũ trước khi khởi động lại.
+
+### Có cần môi trường ảo không?
+
+`venv` dành cho Python; dự án hiện tại dùng JavaScript và Node.js nên không cần. Các thư viện phát triển được npm đặt trong `node_modules` của chính dự án và ghi phiên bản trong `package-lock.json`. Chỉ cần `npm.cmd ci` nếu muốn cài các công cụ phát triển như Playwright; việc mở website bằng lệnh ở trên không cần bước này.
 
 ## Đã hoạt động
 
+- Giao diện triển lãm xanh rừng sâu: không gian nhiều lớp, hạt phấn, ánh sáng viền và thanh chọn tế bào/ADN ngay trên trang đầu.
+- Không gian 3D gần toàn màn hình, đèn quan sát và ẩn/hiện thành tế bào. Nút Chuyển động tạm dừng hiệu ứng; cài đặt giảm chuyển động của hệ điều hành được tôn trọng.
 - Sáu bài mẫu, hai bài cho mỗi lớp 10, 11, 12; chọn khối lớp, tìm kiếm có hoặc không dấu, đánh dấu bài.
 - Mô hình tế bào thực vật cắt lớp và ADN: xoay bằng kéo hoặc bàn phím, phóng to, dừng chuyển động; chọn bào quan bằng chạm hoặc nút chú giải. Có bản chú giải khi WebGL không khả dụng.
 - Thí nghiệm quang hợp với ánh sáng và CO₂, ghi tối đa 20 lần thử, so sánh và lưu vào sổ tay.
