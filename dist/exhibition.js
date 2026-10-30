@@ -36,6 +36,7 @@ function createAtmosphere(canvas,hero){
  function seed(n){const x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x)}
  function resize(){width=hero.clientWidth;height=hero.clientHeight;const dpr=Math.min(devicePixelRatio,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);draw()}
  function draw(){
+   if(!width||!height)return;
    ctx.clearRect(0,0,width,height);
    const glow=ctx.createRadialGradient(width*.73,height*.43,0,width*.73,height*.43,width*.45);glow.addColorStop(0,'rgba(133,163,62,0.045)');glow.addColorStop(1,'rgba(133,163,62,0)');ctx.fillStyle=glow;ctx.fillRect(0,0,width,height);
    for(const p of particles){const drift=moving?Math.sin(time*.0001+p.phase)*15*p.depth:0;const x=p.x*width+px*p.depth*18+drift,y=((p.y*height-time*.003*p.depth)%height+height)%height+py*p.depth*12;const r=.35+p.depth*1.2;const alpha=.08+p.depth*.27;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle=`rgba(${p.depth>.7?'210,222,157':'150,182,130'},${alpha})`;ctx.fill();if(p.depth>.84){const g=ctx.createRadialGradient(x,y,0,x,y,r*6);g.addColorStop(0,'rgba(193,217,121,0.08)');g.addColorStop(1,'rgba(193,217,121,0)');ctx.fillStyle=g;ctx.fillRect(x-r*6,y-r*6,r*12,r*12)}}

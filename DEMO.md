@@ -24,6 +24,6 @@
 
 ## Phạm vi nên nói rõ với ban giám khảo
 
-Bản này có 6 bài mẫu thuộc ba khối, không phải toàn bộ chương trình. Có 2 mô hình 3D và 1 thí nghiệm tương tác. Dữ liệu cục bộ, không có người dùng hoặc kết quả học tập được tạo giả. Chưa triển khai AI, AR, thanh toán hoặc lớp học nhiều tài khoản.
+Bản này có 15 bài mẫu thuộc ba khối, không phải toàn bộ chương trình. Có 4 trang riêng, 2 mô hình 3D và 6 trạm tương tác. Dữ liệu cục bộ, không có người dùng hoặc kết quả học tập được tạo giả. Chưa triển khai AI, AR, thanh toán hoặc lớp học nhiều tài khoản.
 
 Giữ bản chạy tại máy qua `npm start` và thử trước trên thiết bị trình diễn. Tất cả ảnh, thư viện và phông chữ hiển thị chính được lưu trong dự án.

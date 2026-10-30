@@ -1,0 +1,2 @@
+import {readdir} from 'node:fs/promises';import {spawnSync} from 'node:child_process';
+const files=(await readdir('dist')).filter(x=>x.endsWith('.js'));for(const file of files){const result=spawnSync(process.execPath,['--check',`dist/${file}`],{encoding:'utf8',windowsHide:true});if(result.status!==0){process.stderr.write(result.stderr||`Syntax error: ${file}`);process.exit(1)}}console.log(`Syntax OK: ${files.length} application modules.`);
