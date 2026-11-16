@@ -2,3 +2,8 @@ node_modules/
 .qa/
 *.tar.gz
 npm-debug.log*
+.tools/
+.share/
+releases/
+exports/*.pdf
+exports/*-Info.json

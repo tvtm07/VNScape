@@ -1,8 +1,14 @@
+import {schoolSources} from './school-data.js';
 export const books={
  kntt:{name:'Kết nối tri thức với cuộc sống',short:'Kết nối tri thức',sources:{10:'https://hanhtrangso.nxbgd.vn/sach-dien-tu/sinh-hoc-10-11047',11:'https://sachdientu.nxbgd.vn/thu-vien-so/doc-sach/shs-sinh-hoc.4492265451',12:'https://www.nxbgd.vn/bai-viet/infographic-gioi-thieu-sach-giao-khoa-sinh-hoc-12-bo-sach-ket-noi-tri-thuc-voi-cuoc-song'}},
  ctst:{name:'Chân trời sáng tạo',short:'Chân trời sáng tạo',sources:{10:'https://taphuan.nxbgd.vn/lop-10-tong-hop-mon',11:'https://nxbgd.vn/chuyen-muc/bo-sach-chan-troi-sang-tao',12:'https://hcm.nxbgd.vn/bai-viet/infographic-gioi-thieu-sach-giao-khoa-sinh-hoc-12-bo-sach-chan-troi-sang-tao'}}
 };
+for(const [g,s] of Object.entries(schoolSources)){books.kntt.sources[g]=s.url;if(!books.ctst.sources[g])books.ctst.sources[g]='https://hanhtrangso.nxbgd.vn/sach-dien-tu'}
 export const curriculum={
+ 6:{name:'Những viên gạch của sự sống',subtitle:'Từ tế bào đến cơ thể và sự đa dạng quanh ta.',icon:'layers'},
+ 7:{name:'Những quá trình giữ sự sống',subtitle:'Trao đổi chất, cảm ứng, sinh trưởng và sinh sản.',icon:'sprout'},
+ 8:{name:'Hiểu cơ thể, hiểu môi trường',subtitle:'Kết nối sinh học cơ thể người với hệ sinh thái.',icon:'heart'},
+ 9:{name:'Thông tin di truyền và biến đổi',subtitle:'Từ Mendel, DNA và nhiễm sắc thể đến tiến hóa.',icon:'dna'},
  10:{name:'Sự sống bắt đầu từ tế bào',subtitle:'Tìm hiểu cách một tế bào được tổ chức, sử dụng năng lượng và tạo nên những thế hệ mới.',topics:['Cấu trúc & chức năng tế bào','Trao đổi chất & chuyển hóa năng lượng','Chu kì tế bào, phân bào & vi sinh vật'],extension:'Nhận diện vai trò của ADN và sự truyền đạt thông tin qua phân bào, làm nền cho di truyền học ở lớp 12.',icon:'layers'},
  11:{name:'Nhịp sống của cơ thể',subtitle:'Theo dấu các quá trình giúp sinh vật trao đổi chất, cảm ứng, lớn lên và sinh sản.',topics:['Trao đổi chất & năng lượng ở sinh vật','Cảm ứng, sinh trưởng & phát triển','Sinh sản ở thực vật và động vật'],extension:'Kết nối cấu trúc với chức năng và quan sát các quá trình sống ở cấp cơ thể.',icon:'sprout'},
  12:{name:'Mật mã, tiến hóa & hệ sinh thái',subtitle:'Từ thông tin di truyền đến quần thể, hệ sinh thái và những ứng dụng trong đời sống.',topics:['Di truyền phân tử & quy luật di truyền','Tiến hóa & sinh thái học','Di truyền học người & ứng dụng'],extension:'Dùng mô hình và xác suất để giải thích hiện tượng, đồng thời nhận biết giới hạn của mỗi mô hình.',icon:'dna'}

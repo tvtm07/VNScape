@@ -1,0 +1,134 @@
+/* Forest morning. Keep the exhibition's layers and motion; lift its surfaces. */
+:root{
+ --night:#254634;--night-panel:#355a43;--night-text:#f4f3e5;
+ --night-muted:#d0ddc3;--night-line:#d3e2b63d;
+ --paper:#f7f6ec;--ink:#263f30;--muted:#52684f;--green:#35613f;
+ --lime:#e3edaa;--line:#d1dcc4;
+ --leaf-ink:#2b4934;--leaf-muted:#50664c;--sage:#ecf0df;
+ --sun:#ebd69b;--fern:#bdd799;
+}
+body,main{background:var(--night);color:var(--night-text)}
+main{background:radial-gradient(ellipse at 90% 20%,#86a65a14,transparent 50%),var(--night)}
+::selection{background:#e5dda1;color:#28462e}
+.site-header{background:linear-gradient(110deg,#3c654fe8,#274c3eeb);border-color:#d9e4c758;box-shadow:0 10px 35px #11251a26,inset 0 1px 0 #f3f3d52b;color:#f6f5e9}
+.brand-wordmark,.brand-wordmark>span{color:#f6f5e9}.brand-signature{color:#deebc2}
+.header-divider{background:#dce8c047}.site-header .avatar{background:#dce8b92e;border-color:#dce8b94d;color:#eff4d7}
+.site-header .icon-button:hover{background:#e2edc225}.desktop-nav .active{background:#e6edc61c;box-shadow:inset 0 1px 0 #f4f4db30}
+.desktop-nav .active:after{background:var(--sun)}.desktop-nav a:hover,.desktop-nav button:hover{color:#fff8dc;background:#dbe7b820}
+.mobile-nav{background:#345c46f5;border-color:#d7e4bb4d;color:#f5f5e8;box-shadow:0 15px 35px #152f202b}
+.mobile-nav a.active{background:#e4edbc25;color:#fff6d8}
+.hero{background:#294b36}.hero-background{filter:brightness(.94) saturate(.85);opacity:.8}
+.hero-shade{background:linear-gradient(90deg,#203e30f2 0%,#254731cc 30%,#2c4e3447 66%,#26472f70 100%),linear-gradient(0deg,#254634 0%,#25463433 32%,#223b3026 100%)}
+.forest-aura{background:radial-gradient(ellipse at 58% 39%,#d7d98530 0%,#a4bc6620 32%,transparent 65%)}
+.canopy-foreground{filter:brightness(.97) saturate(.88) blur(2px)}
+.hero h1{color:#fff9e9}.hero h1 em{color:#e6edb5}.hero-content>p{color:#e1e9d4}
+.hero-eyebrow,.hero-footnote,.hero-tour{color:#dce7c8}.hero .button-lime,.button-lime{background:var(--lime);color:#29452c;border-color:#f4f4d485;box-shadow:0 5px 18px #132c1c22}
+.hero .button-lime:hover,.button-lime:hover{background:#f1f4c6}
+.hero-bottom,.exhibit-coordinate{color:#d0ddbe;border-color:#d6e1b845}.hero-bottom a{color:#e6edcf}.footnote-separator{color:#c8d4aa}
+.specimen-tag,.specimen-tag #specimen-index,.specimen-view-hint,.specimen-caption .small-label{color:#d6e3bc}
+.specimen-caption h2,.specimen-label{color:#f3f4de}.specimen-halo{background:radial-gradient(ellipse,#cadc7c30,transparent 67%)}
+.specimen-caption,.specimen-caption .round-button{border-color:#dce8b750}.specimen-caption .round-button{background:#dfebba18;color:#f0f3d7}
+.exhibition-dock{background:linear-gradient(100deg,#426748e6,#2e533eea);border-color:#dbe7ba5c;box-shadow:0 10px 30px #19352338}
+.dock-label,.specimen-switch button,.atmosphere-button{color:#e0e9cb}.specimen-switch button.selected{background:#e8efc428;border-color:#e7edc14d;color:#fff9df}
+.realm-link,.realm-link>span:nth-child(2),.realm-link>span:last-child{color:#d4dfc2}.realm-number,.section-number{color:#c2d4a3}
+.realm-link b,.section h2,.home-field-studies>h2{color:#f5f2df}.section-top p{color:#d2dec3}.section .eyebrow,.home-field-studies>.eyebrow{color:#e2e9be}
+.section .text-button,.home-field-studies>.text-button{color:#edf0cd}
+.grade-tabs{background:#1e3f2f;border-color:#d3e0b94d}.grade-tabs button{color:#d9e4c7}.grade-tabs button.selected{background:#dfebbc;color:#29482f;box-shadow:inset 0 0 0 1px #f2f4d14d}
+.book-picker,.learning-toolbar,.learning-toolbar>span{color:#dbe6ca}
+.book-picker select,.learning-toolbar select{background:#3c6248;color:#f4f2dc;border-color:#d6e0b866}
+.curriculum-card{background:radial-gradient(ellipse at 100% 0%,#c8d79b75,transparent 65%),var(--sage);color:var(--leaf-ink);border-color:#e5edce80;box-shadow:0 12px 28px #18312020}
+.curriculum-heading .eyebrow{color:#4b6b3e}.curriculum-heading h3{color:#2b4934}.curriculum-heading p,.curriculum-card-footer p{color:var(--leaf-muted)}
+.curriculum-symbol{background:#dbe5c7;color:#496a3e;border-color:#8eaa6d59}.curriculum-topics,.curriculum-card-footer{border-color:#a1b68d66}
+.curriculum-topics li{color:#334f38}.curriculum-topics li>span{color:#5a744a}.curriculum-card-footer .text-button{color:#3b603a}
+.topic-card{background:var(--sage);color:var(--leaf-ink);border-color:#e3eccb70;box-shadow:0 10px 28px #17322020}
+.topic-card:hover{border-color:#e7dc9a;box-shadow:0 14px 32px #17322033}.topic-body h3{color:#2e4b35}.topic-body p{color:var(--leaf-muted)}
+.topic-kicker{color:#536d46}.topic-bottom{border-color:#a6bc8e66}.topic-bottom>span{color:#566c4c}.topic-bottom button{color:#305b36}
+.topic-image,.topic-card.featured .topic-image{background:#476b4b}.topic-image>img{filter:saturate(.9) brightness(1.02)}.topic-card.featured .topic-image>img{filter:saturate(.95) brightness(1.02)}
+.topic-image:after{background:linear-gradient(0deg,#284b3147,transparent 60%)}.topic-type{background:#244b37e8;color:#f1f3df;border-color:#d9e8bc66}
+.bookmark-button{background:#eef2dce8;color:#375d3b;border-color:#deebc9aa}.bookmark-button.saved{background:#e7d794;color:#375433}
+.illustration-membrane{background:radial-gradient(ellipse at 50% 35%,#89aa7b,#4d7357);color:#eff3d6}.illustration-water{background:radial-gradient(ellipse at 50% 35%,#83a798,#476f5c);color:#e8f3da}
+.illustration-mendel{background:radial-gradient(ellipse at 50% 35%,#a4b67c,#657e4c);color:#faf0c6}.illustration-energy{background:radial-gradient(ellipse,#a8b96e,#5c7c46);color:#f5edba}
+.illustration-cell{background:radial-gradient(ellipse,#88a576,#4c7752);color:#edf3d1}
+.inner-page{background:radial-gradient(ellipse at 95% 0%,#a1b96a20,transparent 55%)}
+.page-intro .eyebrow,.gallery-section-heading .eyebrow{color:#e2e8b9}.page-intro h1,.gallery-section-heading h2{color:#f6f3e2}
+.page-intro>p,.gallery-section-heading p{color:#dce6cb}.page-facts{background:#426344bf;color:#eef0d9;border-color:#d6e1b847}.page-facts a{color:#fff0bb}
+.gallery-footnote{color:#d6e2c3}.mini-pill{color:#e4edcd;background:#dce9ad15;border-color:#dce9ad4d}
+.environment-distant{background:linear-gradient(90deg,#254634e8 0%,#31533b75 50%,#36543b38),url('assets/forest.jpg') center top/cover;filter:brightness(.98) saturate(.88)}.environment-canopy{filter:brightness(.98) saturate(.88)}
+.environment-light{background:radial-gradient(ellipse at 72% 9%,#eadb8a38,transparent 65%)}
+.library-exhibition .specimen-card{background:radial-gradient(ellipse at 50% 30%,#799c5d38,transparent 68%),#31543d;border-color:#d0e2ae59;box-shadow:inset 0 1px 0 #e5eac31c,0 15px 36px #112b1a26}
+.library-exhibition .specimen-featured{background:radial-gradient(ellipse at 50% 30%,#c4cf7d30,transparent 66%),#36583e}
+.library-exhibition .dna-model-card{background:radial-gradient(ellipse at 50% 32%,#9fc0a538,transparent 66%),#305443}
+.specimen-card .model-card-label,.model-card-label>span{color:#d6e4bc}.specimen-card-caption>span:first-child{color:#d9e8b4}
+.specimen-card-caption strong{color:#fff5df}.specimen-card-caption>span:last-child{color:#e0e8cd}.model-card .round-button{background:#e6edbe15;border-color:#d3e3aa66;color:#edf2d3}
+.science-poster-card .eyebrow{color:#dce7bc}.science-poster-card h3{color:#f5f1dd}.science-poster-card p{color:#d4e1c2}.science-poster-card .text-button{color:#eff0c6}
+.science-poster-image{border-color:#c3d19b66;box-shadow:0 16px 30px #172b1a33}.science-poster-image>span{background:#345e40e6;color:#f6f3d7}
+.nature-plate{background:#43684a;border-color:#d6e0af66}.nature-plate>img{filter:brightness(.94) saturate(.95)}.nature-plate:hover>img{filter:brightness(1.04) saturate(1)}
+.nature-plate:after{background:linear-gradient(0deg,#254a36f2,#254a3670 35%,transparent 75%)}.nature-plate>span{color:#fff6e2}.nature-plate small{color:#e0e9c9}
+.lab-botanical-window{background:#52714c;border-color:#d7e4b657;box-shadow:0 18px 35px #17301b2b}.lab-botanical-window>img{filter:brightness(.79) saturate(.9)}
+.lab-botanical-window:after{background:linear-gradient(0deg,#31513cf0,#31513c33 55%,transparent 85%)}.botanical-window-glass{background:radial-gradient(ellipse,#e5e1a72e,transparent 70%);border-color:#e1e5b647}
+.botanical-window-glass>span,.lab-botanical-window figcaption>span{color:#e3eccb}.lab-botanical-window figcaption>p{color:#fff6df}.lab-botanical-window .text-button{color:#f2f3d4}
+.laboratory-exhibition .lab-page-toolbar{background:#426748a6;border-color:#d0deae45}.catalog-tabs button{background:#31543d;color:#e2e9cf;border-color:#caddad66}
+.catalog-tabs button.selected{background:#e2eabd;color:#2e4c33;border-color:#f5f0ca}.lab-page-toolbar>span{color:#e2e9c9}
+.laboratory-exhibition .experiment-card{background:var(--sage);color:var(--leaf-ink);border-color:#dce7bc99;box-shadow:0 12px 28px #17322026}
+.laboratory-exhibition .experiment-card:hover{border-color:#e6d594}.laboratory-exhibition .experiment-preview{background:radial-gradient(ellipse at 50% 35%,#718b554d,transparent 75%),#31533d;border-color:#8aab6e66}
+.experiment-card h3{color:#2d4a34}.experiment-card p{color:#50684c}.experiment-card .eyebrow,.experiment-card .small-label,.experiment-card .experiment-meta{color:#526e43}
+.experiment-card h2{color:#2d4a34}.experiment-card .experiment-kicker,.experiment-card-meta{color:#536d45}
+.experiment-card .text-button{color:#355c34}.experiment-card .experiment-preview{color:#e4eccb}
+.lab-method-note{background:#3a5c40;border-color:#c9daa65c;color:#e2e8cb}.lab-method-note p{color:#dce6c8}.lab-method-note h2{color:#f4edcf}.lab-method-note>svg{color:#e0d79e}
+.field-lab-banner{background:#3c6146;border-color:#d5e1b64d;box-shadow:0 16px 36px #152c2026}.field-lab-banner>img{filter:saturate(.95) brightness(1)}
+.field-lab-banner .eyebrow{color:#dee8bb}.field-lab-banner h2{color:#faf4df}.field-lab-banner p{color:#dae5c8}.field-lab-banner .text-button{color:#f2edbc}
+.scope-lab-invitation{background:linear-gradient(110deg,#e9edcd,#dce6bf);border-color:#f3f2ce9c;color:#345334;box-shadow:0 8px 24px #1a362322}
+.scope-lab-invitation h2{color:#2e4f35}.scope-lab-invitation p{color:#506a48}.scope-lab-invitation>.text-button,.scope-lab-invitation>span:first-child{color:#40663a}
+.journal-tabs{border-color:#d3dfb647}.journal-tabs>button{color:#dfe8cc}.journal-tabs>button.selected{background:#e0e9bd;color:#2c4b33;border-color:#edf0cd}
+.journal-tabs>button>span{background:#57774420}.journal-toolbar>div:first-child{color:#d5e3c0}.journal-ready-dot{background:#e3e8a7}
+.journal-tools button,.book-navigation button{background:#4a6b49;color:#f0f1d6;border-color:#d5e1af66}.journal-tools button:hover,.book-navigation button:hover{background:#57784f}
+.journal-index>.eyebrow,.journal-index-list>p,.journal-index-tip,.journal-privacy{color:#d4e1be}.journal-index h2{color:#f1f1d5}
+.journal-index-list button{color:#e2e8c7}.journal-index-list button>span:first-child{color:#e4dca3}.journal-index-list button.selected{background:#dce7b822;border-color:#d7e2b354;color:#f7f1d4}
+.field-journal{background:#5b7551;border-color:#d2dba581;box-shadow:0 24px 40px #11271a38,0 8px 0 #355439,inset 0 0 0 3px #426340}
+.journal-front-cover{background:radial-gradient(ellipse at 45% 28%,#d2d39a20,transparent 65%),linear-gradient(115deg,#56754d,#345a3e);color:#f1edc9;box-shadow:inset 0 0 0 11px #34543a,inset 0 0 0 13px #d4d8a55c}
+.journal-front-cover>span:first-of-type,.journal-front-cover small{color:#e4e7bd}.journal-front-cover>span:last-of-type{color:#d5dfb3}
+.book-navigation select{background:#466b48;color:#f3f0d4;border-color:#d5e1af66}.book-footline,.book-footline button{color:#dbe4c0}
+.journal-title::placeholder,.journal-writing::placeholder{color:#67765c}.paper-topline,.paper-bottomline{color:#637352}.paper-eyebrow,.paper-imprint,.book-frontispiece>p{color:#657552}
+.book-frontispiece>.frontispiece-quote{color:#596d49}.book-frontispiece strong{color:#45603e}
+.progress-card{background:linear-gradient(145deg,#476d49,#31543d);border-color:#d2e1af54;box-shadow:0 13px 30px #16321f22;color:#eaf0d4}
+.progress-card-top h3{color:#fbf4dc}.progress-card .small-label,.progress-row{color:#d9e5bf}.progress-card .avatar{background:#d1e4a62b;color:#ecedc0;border-color:#d7e2ac54}
+.seed-badge{background:#dde6a526;color:#f0edb8;border-color:#d6e2b147}.progress-row strong{color:#f2ecb1}.progress-track{background:#e4edbd25}
+.journey-badge{color:#cfddbc;filter:none}.journey-badge>span:first-child{border-color:#cedfa15e}.journey-badge.earned{color:#fbf0b2}.journey-badge.earned>span:first-child{border-color:#ead997;background:#ead99720}
+.progress-next,.journey-intro>p{color:#dde6c9}.journey-intro>.eyebrow{color:#dde8bb}
+.field-note{background:radial-gradient(ellipse at 50% 100%,#a5b77526,transparent 75%),#2d4e37;border-color:#d4e1b53b}.field-note p{color:#ebeed6}.field-note em{color:#f2e4a7}
+.field-note>span:first-child{color:#c9d8a3}.field-note>span:last-child{color:#d3dfb9}
+footer{background:#284a36;color:#e1e8c9}.footer-main>.brand{color:#f5f2df}.footer-main>p,.footer-bottom,.prototype-label{color:#d0dcbc}.footer-links{color:#e2e8ce}
+.footer-bottom,.footer-main>p{border-color:#cedfb03d}.little-leaf{color:#eadc9d}
+dialog::backdrop{background:#142a20c9}.model-dialog{background:radial-gradient(ellipse at 36% 30%,#8baf5b22,transparent 70%),#254c38;color:#f2f1da;border-color:#ccdda367;box-shadow:0 20px 70px #10271d66}
+.model-dialog .dialog-top .eyebrow,.model-dialog .dialog-lead{color:#d7e3bb}.model-dialog .dialog-top .icon-button{background:#cddaac1f;color:#f1f2d9;border-color:#cddaac59}
+.model-dialog .model-viewer{background:radial-gradient(ellipse at 50% 45%,#9ab76635,transparent 75%),#30563c;border-color:#c4d9a039}
+.model-dialog.is-lit .model-viewer{background:radial-gradient(ellipse at 50% 45%,#c7d68e42,transparent 75%),#486c49}
+.model-dialog .viewer-tools{background:#47694bea;border-color:#d1e0ad6b}.model-dialog .viewer-tools button{color:#f0f1d2}.model-dialog .viewer-tools button[aria-pressed=true]{background:#dde7b42b;border-color:#dce5b252}
+.model-dialog .model-disclaimer,.model-dialog .model-keyboard,.model-dialog .viewer-tip,.model-source{color:#d4e1b9}
+.model-dialog .organelle-list button{background:#416743;color:#edf0d1;border-color:#b9d2946b}.model-dialog .organelle-list button.selected{background:#dde7b6;color:#304c31;border-color:#ede9b3}
+.model-dialog .organelle-detail{background:#3a6042;border-color:#d1dfaa62}.model-dialog .organelle-detail h3{color:#faf2d8}.model-dialog .organelle-detail .small-label{color:#dce5b6}
+.model-dialog .organelle-detail p,.model-dialog .fact-note{color:#e1e8c7}.model-dialog .fact-note{background:#d1df9f17;border-left-color:#e1d68d}.model-dialog .dialog-link{color:#f0e7b2}
+/* The optical field retains its scientifically meaningful brightness settings. */
+.microscope-page{background:radial-gradient(ellipse at 80% 5%,#adbe7126,transparent 50%),var(--night)}
+.scope-sample-bar>div:first-child>span:last-child{color:#d7e2c2}.scope-slides>button{background:#426649;color:#edf0d6;border-color:#cfdfae66}
+.scope-slides>button[aria-pressed=true]{background:#e1e8bf;color:#2c4a32;border-color:#f5edbf;box-shadow:inset 0 1px 0 #fff8dc99,0 5px 15px #15311e22}
+.scope-slides>button>span>small{opacity:.85}.scope-workstation{background:#365e42;border-color:#d5e0ae72;box-shadow:0 16px 36px #19351d2b}
+.scope-stage{background:#3b5d45}.scope-lab-background{background:linear-gradient(90deg,#2e4f3bbf,#47664366 50%,#59784b66),url('assets/fern.jpg') 70% 25%/cover;filter:blur(9px) brightness(.95);opacity:.85}
+.scope-bench{background:linear-gradient(180deg,#7d8e66,#667e58 55%,#496748);border-color:#d4dfb36b}.scope-hud,.scope-hardware-label{color:#e4e8c8}.scope-hardware-label span{background:#dbe3b980}
+.scope-entry{background:radial-gradient(ellipse at 50% 65%,#34563deb,transparent 75%)}.scope-entry>p{color:#fff2d7}.scope-entry>span:last-child,.scope-observation-hint,.scope-approach{color:#e4e8c8}
+.scope-exit{background:#375d40e6;color:#f6edce;border-color:#d5dfaa6b}
+.scope-console{background:linear-gradient(120deg,#edf0dc,#e2e9d0),#e7ecd7;color:#36533a;border-color:#b8ca9a66}
+.scope-console-heading .eyebrow{color:#4f6c3d}.scope-console-heading h2{color:#304d34}.scope-magnification>span{color:#3b6037}.scope-magnification p,.scope-magnification b{color:#50684a}
+.scope-objectives legend,.scope-slider,.scope-pan{color:#455f3e}.scope-objectives button{background:#d6e1bf;color:#3a5634;border-color:#91ab7580}.scope-objectives button[aria-pressed=true]{background:#436a3f;color:#faf3d6;border-color:#3e613b}
+.scope-focus-message{color:#586947}.scope-focus-message.is-sharp{color:#355f35}.scope-slider output{color:#3b5b34}.scope-slider input,.scope-oil input{accent-color:#527848}
+.scope-assist,.scope-capture button{background:#d9e4c4;color:#3b5e37;border-color:#91ad7270}.scope-capture button:last-child{background:#456b40;color:#faf3d8;border-color:#486b40}
+.scope-toggles button{color:#47623e}.scope-toggles button[aria-pressed=true]{color:#2f552d}.scope-pan button{background:#d1dfb8;color:#345932;border-color:#95ae7680}
+.scope-console-note{color:#526747}.scope-console .scope-light-controls,.scope-pan,.scope-magnification{border-color:#94ad7259}
+.scope-specimen-info{color:#dce6c8}.scope-description h2{color:#f5f1dc}.scope-description h2 em,.scope-feature-list>span{color:#d9e4c0}.scope-feature-list.highlighted>span{color:#fff0b9}
+.scope-question h3{color:#f1eccf}.scope-question p{color:#d1dfbc}.scope-references{background:#3b5d42;color:#e0e6cb;border-color:#c8d8a26b}.scope-references summary{color:#f2edc8}
+.scope-references a{border-color:#c8d8a242}.scope-references a>span{color:#e8e5b5}
+:is(.curriculum-card,.topic-card,.experiment-card,.scope-console,dialog:not(.model-dialog),.journal-paper) :is(button,a,input,select,textarea):focus-visible{outline-color:#4d713e}
+@media(hover:hover) and (pointer:fine){
+ .scope-slides button:hover{border-color:#f0e0a1}.scope-assist:hover,.scope-capture button:first-child:hover{background:#cdddb2}
+ .desktop-nav a:hover{box-shadow:inset 0 1px 0 #f4f4da33,0 5px 18px #18332122}
+}

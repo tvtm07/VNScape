@@ -1,0 +1,25 @@
+VNScape — ảnh bìa đăng ký dự thi
+Created using the built-in image_gen tool. Original PNG copied unchanged into exports.
+
+Use case: ads-marketing.
+Asset type: Final polished landscape 16:9 cover image, preferably 1920x1080 or higher, for a Vietnamese student EdTech startup competition registration. This is a promotional cover for the real biology education website VNScape.
+Primary request: Design one exquisite, professional website-cover image with the spacious clarity of a premium EdTech landing page. Botanical, fresh, natural, inviting and credible; refined editorial art direction, not a cluttered AI fantasy scene.
+Brand: VNScape, a biology discovery platform. Logo at top left: a refined circular line emblem integrating a V and a small leaf, beside exact wordmark "VNScape". Small tagline below wordmark: "THE LIVING ATLAS".
+Composition: wide horizontal frame, generous safe margins at least 6%, restrained top navigation. Large highly legible headline as the principal focal point in the central-left area; clean negative space around the text. A beautiful semi-realistic, translucent cutaway plant cell on the right third, framed by a subtle leaf silhouette and soft botanical depth. Include a nucleus, a large vacuole and green chloroplast forms as stylized educational illustration; no scientific labels. A delicate DNA ribbon may appear only as a very faint secondary background motif. A few soft organic gradients, subtle daylight, no busy glow effects. Preserve a clear visual hierarchy so the cover still reads in a small thumbnail.
+Color palette: warm pearl/off-white #F4F6ED, pale sage #DCE8D4, deep forest ink #244D39, fresh emerald #238565, restrained yellow-green accent. Background mostly light, sophisticated and airy. Main text very high contrast; never dark-on-dark.
+Typography: beautiful, crisp Vietnamese typesetting, real diacritics and punctuation, no malformed letters. Wordmark bold clean humanist sans; main headline elegant readable modern serif or substantial polished humanist sans, without cramped tracking. All supporting text large enough to read.
+Text, verbatim, in this hierarchy:
+Top-left brand: "VNScape"
+Brand micro-tagline: "THE LIVING ATLAS"
+Top navigation, understated: "Học liệu"   "Thư viện 3D"   "BioLab"   "Thế giới sống"
+Small eyebrow above main heading: "TRIỂN LÃM SỐ VỀ SỰ SỐNG"
+Main headline, two lines:
+"Đi sâu vào"
+"thế giới sống."
+Supporting sentence, two short lines:
+"Khám phá Sinh học qua mô hình 3D,"
+"thí nghiệm ảo và những câu hỏi từ đời sống."
+One beautiful soft emerald call-to-action: "Bắt đầu khám phá" with a tiny elegant arrow.
+A restrained feature row below: "Học liệu lớp 6–12"   "Mô hình 3D"   "Phòng thí nghiệm ảo"
+Bottom website address, clearly legible: "vnscape-bio.pages.dev"
+Constraints: only VNScape branding, no GreenClassLab, no third-party logos. No fabricated statistics, AI claims, awards, partners or endorsements. No QR code. No browser chrome or device mockup. No watermark. Avoid overfilled HUDs, gold neon, dark science-fiction backgrounds, cartoon mascot, generic glossy stock art. The result should feel like a real designed premium biology learning website hero, suitable to upload as the single project cover to competition organizers.

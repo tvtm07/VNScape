@@ -5,8 +5,17 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
+    "start:lan": "node server.mjs --lan",
+    "pdf": "node scripts/export-pdf.mjs",
+    "share": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/share.ps1",
+    "share:stop": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/share.ps1 -Stop",
     "check": "node scripts/check.mjs",
-    "test": "node --test tests/learning.test.mjs tests/labs.test.mjs tests/journal-data.test.mjs"
+    "test": "node --test tests/learning.test.mjs tests/labs.test.mjs tests/journal-data.test.mjs tests/microscope.test.mjs tests/studio.test.mjs tests/release.test.mjs tests/campus.test.mjs",
+    "release": "node scripts/prepare-release.mjs",
+    "hosting:login": "node scripts/cloudflare.mjs login",
+    "hosting:status": "node scripts/cloudflare.mjs status",
+    "deploy:preview": "node scripts/cloudflare.mjs preview",
+    "deploy": "node scripts/cloudflare.mjs production"
   },
   "devDependencies": {
     "playwright": "^1.64.1"
